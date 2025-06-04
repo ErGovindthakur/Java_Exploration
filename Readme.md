@@ -76,54 +76,149 @@ int[] numbers = {1, 2, 3, 4, 5};
 System.out.println(numbers[0]); // Outputs 1
 
 ```
+### ✅ Object-Oriented Programming (OOP) Concepts in Java (In-Depth)
+OOP is a programming paradigm based on the concept of objects, which can contain data (fields/attributes) and methods (functions). Java is built on OOP, and understanding it deeply is essential for building scalable and maintainable applications.
 
-## Object-Oriented Programming (OOP)
-Classes and Objects
+1. Class and Object
+Class: A blueprint for creating objects. It defines properties and behaviors.
 
-``` java
-public class Car {
-    String model;
-    int year;
-
-    public void drive() {
-        System.out.println("Driving " + model);
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Car car = new Car();
-        car.model = "Toyota";
-        car.year = 2020;
-        car.drive();
-    }
-}
-
-```
-
-## Inheritance
-``` java
-public class Vehicle {
-    public void start() {
-        System.out.println("Vehicle started");
-    }
-}
-
-public class Bike extends Vehicle {
-    public void start() {
-        System.out.println("Bike started");
-    }
-}
-
-```
-
-## Polymorphism
+Object: An instance of a class.
 
 ``` java
-Vehicle myVehicle = new Bike();
-myVehicle.start(); // Outputs "Bike started"
+public class Dog {
+    String breed;
+    int age;
+
+    public void bark() {
+        System.out.println("Woof!");
+    }
+}
+
+Dog myDog = new Dog(); // Object creation
+myDog.bark(); // Method call
+```
+## 2. Encapsulation (Data Hiding)
+Encapsulation is the process of wrapping variables (data) and methods into a single unit (class). Use private access modifier and provide public getters and setters.
+
+``` java
+public class BankAccount {
+    private double balance; // Encapsulated field
+
+    public void deposit(double amount) {
+        if (amount > 0) balance += amount;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+}
+```
+## ✅ Why use Encapsulation?
+
+Prevents unauthorized access
+
+Improves code maintainability
+
+## 3. Inheritance (Code Reusability)
+Inheritance allows one class (child) to acquire the properties and methods of another class (parent).
+
+``` java
+public class Animal {
+    public void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+public class Cat extends Animal {
+    public void meow() {
+        System.out.println("Meow!");
+    }
+}
+
+// Usage:
+Cat kitty = new Cat();
+kitty.eat();  // Inherited method
+kitty.meow(); // Own method
 
 ```
+## ✅ Why use Inheritance?
+
+Promotes code reuse
+
+Helps create a class hierarchy
+
+4. Polymorphism (Many forms)
+Compile-time Polymorphism (Method Overloading): Same method name, different parameters.
+
+``` java
+public class MathUtil {
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public double add(double a, double b) {
+        return a + b;
+    }
+}
+```
+Run-time Polymorphism (Method Overriding): Subclass provides specific implementation of a parent method.
+
+``` java
+public class Bird {
+    public void sound() {
+        System.out.println("Some sound");
+    }
+}
+
+public class Parrot extends Bird {
+    public void sound() {
+        System.out.println("Squawk!");
+    }
+}
+
+// Usage:
+Bird myBird = new Parrot();
+myBird.sound(); // Outputs "Squawk!"
+```
+## ✅ Why use Polymorphism?
+
+Enhances flexibility
+
+Helps achieve loose coupling
+
+## 5. Abstraction (Hiding implementation)
+Abstraction means showing only essential details and hiding unnecessary information.
+
+a. Using Abstract Class
+
+``` java
+abstract class Shape {
+    abstract void draw();
+}
+
+class Circle extends Shape {
+    void draw() {
+        System.out.println("Drawing Circle");
+    }
+}
+```
+b. Using Interface
+``` java
+interface Animal {
+    void sound();
+}
+
+class Dog implements Animal {
+    public void sound() {
+        System.out.println("Bark");
+    }
+}
+```
+## ✅ Why use Abstraction?
+
+Provides a clear structure
+
+Focus on what an object does instead of how it does it
 
 ## Advanced Concepts
 Exception Handling

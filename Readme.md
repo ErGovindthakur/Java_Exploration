@@ -232,6 +232,14 @@ try {
 
 ```
 
+## Abstraction vs Encapsulation (Quick Recap)
+
+| Feature     | Abstraction                      | Encapsulation                                   |
+| ----------- | -------------------------------- | ----------------------------------------------- |
+| Purpose     | Hides **implementation details** | Hides **data** and protects from outside access |
+| Focus       | On **behavior**                  | On **data**                                     |
+| Achieved by | Abstract classes / Interfaces    | Private variables + public getters/setters      |
+
 ## File I/O
 
 ``` java

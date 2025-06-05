@@ -1,4 +1,7 @@
 // Encapsulation -> It's the process of hiding internal detail and exposing only what needed using getters/setters
+
+// Note -> ⛳ Why? Protects data from direct access or modification.
+
 class Member{
      private String memberName;
      private int memberId;

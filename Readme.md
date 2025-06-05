@@ -80,7 +80,7 @@ System.out.println(numbers[0]); // Outputs 1
 OOP is a programming paradigm based on the concept of objects, which can contain data (fields/attributes) and methods (functions). Java is built on OOP, and understanding it deeply is essential for building scalable and maintainable applications.
 
 1. Class and Object
-Class: A blueprint for creating objects. It defines properties and behaviors.
+Class: A blueprint for creating objects or class is the named group of features and functionality. It defines properties and behaviors.
 
 Object: An instance of a class.
 

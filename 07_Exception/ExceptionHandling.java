@@ -7,6 +7,8 @@ class MyException {
           System.out.println(a/b);
      } catch (Exception e) {
           System.out.println("I got an error -: "+ e.getMessage());
+     }finally{
+          System.out.println("Finally i got it ");
      }
  }
 } 

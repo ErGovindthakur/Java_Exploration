@@ -36,9 +36,17 @@ public static void main(String[] args) {
      System.out.println(x/y);
      System.out.println(x%y);
 
-     // 3. area of circle
-     double r = 9;
-     double area = 3.14 * r * r;
+     // Practice Task
+     // 1. area of circle
+     double radius = 9;
+     double area = 3.14 * radius * radius;
      System.out.println(area);
+
+     // 2. calculate the volume of a sphere
+     int sphereRadius = 5;
+     // double sphereVolume = (4.0/3.0)*3.14*(sphereRadius*sphereRadius*sphereRadius);
+     double sphereVolume = (4.0/3.0)*3.14*Math.pow(sphereRadius,3);
+     System.out.println("Volume of sphere => "+Math.round(sphereVolume));
+     
 }  
 }

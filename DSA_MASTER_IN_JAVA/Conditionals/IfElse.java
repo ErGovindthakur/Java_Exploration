@@ -1,3 +1,5 @@
+package DSA_MASTER_IN_JAVA.Conditionals;
+
 /*
 Problem statements
 Write a program that:
@@ -19,7 +21,7 @@ Fail → below 40
 
 import java.util.Scanner;
 
-public class If_Else {
+public class IfElse {
      public static void main(String[] args) {
           Scanner gradSc = new Scanner(System.in);
 

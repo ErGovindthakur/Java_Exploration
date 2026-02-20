@@ -26,7 +26,11 @@ public class SquarePattern {
 
           for(int i = 1; i<=rows; i++){
                for(int j = 1; j<=cols; j++){
-                    System.out.print("* ");
+                    // 1. Star Square
+                    // System.out.print("* ");
+
+                    // 2. Number Square
+                    System.out.print(j+" ");
                }
                System.out.println();
           }

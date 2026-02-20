@@ -38,7 +38,10 @@ public class SquarePattern {
                     // num++;
 
                     // 4. Alphabet Square (small letter)
-                    System.out.print((char)(j+96)+" "); // since 'a' starts at "97"
+                    // System.out.print((char)(j+96)+" "); // since 'a' starts at "97"
+
+                    // 5. Repeated number pattern
+                    System.out.print(i+" ");
                }
                System.out.println();
           }

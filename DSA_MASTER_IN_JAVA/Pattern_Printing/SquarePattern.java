@@ -25,12 +25,17 @@ public class SquarePattern {
           int cols = sc.nextInt();
 
           for(int i = 1; i<=rows; i++){
+               int num = 65; // ascii value of 'A'
                for(int j = 1; j<=cols; j++){
                     // 1. Star Square
                     // System.out.print("* ");
 
                     // 2. Number Square
-                    System.out.print(j+" ");
+                    // System.out.print(j+" ");
+
+                    // 3. Alphabet Square
+                    System.out.print((char)num+" ");
+                    num++;
                }
                System.out.println();
           }

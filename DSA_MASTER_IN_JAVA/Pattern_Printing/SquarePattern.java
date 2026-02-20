@@ -33,9 +33,12 @@ public class SquarePattern {
                     // 2. Number Square
                     // System.out.print(j+" ");
 
-                    // 3. Alphabet Square
-                    System.out.print((char)num+" ");
-                    num++;
+                    // 3. Alphabet Square (Capital Letter)
+                    // System.out.print((char)num+" ");
+                    // num++;
+
+                    // 4. Alphabet Square (small letter)
+                    System.out.print((char)(j+96)+" "); // since 'a' starts at "97"
                }
                System.out.println();
           }

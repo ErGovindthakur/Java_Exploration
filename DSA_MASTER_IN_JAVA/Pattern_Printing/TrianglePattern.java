@@ -15,22 +15,28 @@ public class TrianglePattern {
           // int cols = sc.nextInt();
 
           for(int i = 1; i<=rows; i++){
+               int num = 1;
                for(int j = 1; j<=i; j++){
                     // 1. Start Triangle
                     // System.out.print("* ");
 
                     // 2. Number Triangle
                     // System.out.print(j+" ");
-
+                    if(j==1){
+                         System.out.print(1+" ");
+                    }else{
+                         System.out.print((num)+" ");
+                    }
+                    num = num+2;
                     // 3. Alphabet Triangle
                     // System.out.print((char)(j+64)+" ");
 
                     // 4. Alphanumeric Triangle
-                    if(i%2!=0){
-                         System.out.print(j+" ");
-                    }else{
-                         System.out.print((char)(j+64)+" ");
-                    }
+                    // if(i%2!=0){
+                    //      System.out.print(j+" ");
+                    // }else{
+                    //      System.out.print((char)(j+64)+" ");
+                    // }
                }
                System.out.println();
           }

@@ -12,11 +12,11 @@ public class StarPlusPattern {
           System.out.print("Enter the num of cols must be +ve : ");
           int cols = sc.nextInt();
 
-          if(rows==cols && (rows%2!=0 && cols%2!=0)){
-
+          if(rows==cols && rows%2!=0){ // since here our rows and cols both are same so check either rows or cols
+               int mid = (cols/2)+1; // here we can take either row or cols both
                for(int i = 1; i<=rows; i++){
                     for(int j = 1; j<=cols; j++){
-                         if(j==((cols/2)+1) || i==((rows/2)+1)){
+                         if(j==mid || i==mid){
                               System.out.print("* ");
                          }else{
                               System.out.print("  ");

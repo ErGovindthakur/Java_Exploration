@@ -2,7 +2,7 @@ package DSA_MASTER_IN_JAVA.Pattern_Printing;
 
 import java.util.Scanner;
 
-public class FlippedTriangle {
+public class FlippedTriangles {
      public static void main(String[] args) {
           Scanner sc = new Scanner(System.in);
 

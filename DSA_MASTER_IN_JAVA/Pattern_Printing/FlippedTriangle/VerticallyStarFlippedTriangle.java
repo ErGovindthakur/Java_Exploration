@@ -9,8 +9,17 @@ public class VerticallyStarFlippedTriangle {
                          System.out.print(" ");
                     }
                      for(int l = 1; l<=star-j+1; l++){
+                         // 1. pyramid pattern
                          // System.out.print("* "); // space makes it pyramid
-                         System.out.print("*");
+
+                         // 2. vertically flipped  star triangle
+                         // System.out.print("*");
+
+                         // 3. vertically flipped number triangle
+                         // System.out.print(l);
+
+                         // 4. vertically flipped alphabet triangle
+                         System.out.print((char)((star-j+1)+64));
                     }
                     System.out.println();
                }

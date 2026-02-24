@@ -15,5 +15,8 @@ public class InbuiltMethod {
           System.out.println(Math.pow(3, 2));
           System.out.println(Math.random());
           System.out.println(Math.round(3.4));
+
+          // Max of three num
+          System.out.println(Math.max(Math.max(3,5), 7));
      }
 }

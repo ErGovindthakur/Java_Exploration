@@ -5,7 +5,7 @@ public class FindSecondMaxElem {
           int max = Integer.MIN_VALUE;
           int sMax = Integer.MIN_VALUE;
 
-          for(int i = 2; i<arr.length; i++){
+          for(int i = 0; i<arr.length; i++){
                if(arr[i]>max){
                     sMax = max;
                     max = arr[i];
@@ -18,9 +18,9 @@ public class FindSecondMaxElem {
           return (sMax == Integer.MIN_VALUE) ? -1 : sMax;
      }
      public static void main(String[] args) {
-          // int [] arr = {4,1,8,9,5};
+          int [] arr = {4,1,8,9,5};
           // int [] arr = {5,5,5,5,5};
-          int [] arr = {12,12,12,12,1};
+          // int [] arr = {12,12,12,12,1};
           int sMax = secondMaxElem(arr);
 
           System.out.println("Second max elem : "+ sMax);

@@ -28,10 +28,26 @@ public class RemoveDuplicateFromSortedArr {
           }
 
      }
+
+     static void removeDupOpt(int[]arr){
+          int n = arr.length;
+          int j = 0; // flow
+
+          for(int i = 1; i<n; i++){
+               if(arr[i]!=arr[j]){
+                    j++;
+                    arr[j] = arr[i];
+               }
+          }
+     }
      public static void main(String[] args) {
           int [] arr = {1,1,1,2,2,3,3,3,4,4};
 
-          removeDupFrmSrtArr(arr);
+          // complicated logic
+          // removeDupFrmSrtArr(arr);
+
+          // optimized and clear code
+          removeDupOpt(arr);
 
           System.out.println(Arrays.toString(arr));
      }

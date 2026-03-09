@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class SquareOfSortedArr {
+     // Method 1 (Not much optimized due to space complexities)
      static int[] sqr(int[] arr) {
 
           int n = arr.length;
@@ -71,9 +72,36 @@ public class SquareOfSortedArr {
           return result;
      }
 
+
+     // method 2 (optimized with two pointer approach)
+
+     static int[] sqrOpt(int[]arr){
+          int n = arr.length;
+          int left = 0; // 1st pointer starts from 0th index
+          int right = n-1; // 2nd pointer starts from (n-1)th index
+
+          int k = n-1; // since we are pushing value from the back side of array
+
+          int [] result = new int[n];
+
+          while(left<=right){
+               if(arr[left]*arr[left]>arr[right]*arr[right]){
+                    result[k] = arr[left]*arr[left];
+                    k--;
+                    left++;
+               }else{
+                    result[k] = arr[right]*arr[right];
+                    k--;
+                    right--;
+               }
+          }
+          return result;
+     }
      public static void main(String[] args) {
-          int[] arr = { -4, -1, 0, 3, 10 };
-          System.out.println(Arrays.toString(sqr(arr)));
-          // sqr(arr);
+          int[] arr = { -3, -1, 2 };
+          // System.out.println(Arrays.toString(sqr(arr)));
+
+          System.out.println(Arrays.toString(sqrOpt(arr)));
+          
      }
 }

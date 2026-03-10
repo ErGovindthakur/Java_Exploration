@@ -13,15 +13,15 @@ public class TwoSumWithDupElem {
                if (arr[st] + arr[end] == target) {
                     arl.add(arr[st]);
                     arl.add(arr[end]);
-                    st++;
-                    end--;
-                    if (arr[st] == arr[st + 1] && arr[end] == arr[end - 1]) {
-                         st++;
-                         end--;
+                    
+                    int left = arr[st];
+                    int right = arr[end];
 
-                    } else if (arr[st] == arr[st + 1]) {
+                    while(st<end && arr[st]==left){
                          st++;
-                    } else if (arr[end] == arr[end - 1]) {
+                    }
+
+                    while(st<end && arr[end]==right){
                          end--;
                     }
                } else if (arr[st] + arr[end] > target) {

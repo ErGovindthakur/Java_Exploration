@@ -20,7 +20,7 @@ public class ContainsDuplicate_II {
           return false;
      }
     public static void main(String[] args) {
-     int [] nums = {1,3,2,4,1};
+     int [] nums = {1,2,3,1,2,3};
      int k = 3;
      System.out.println("Contains Dup: "+containsDup(nums, k));
     } 

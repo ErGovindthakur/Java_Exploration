@@ -23,7 +23,7 @@ public class MaxProductSubArray {
           return result;
      }
      public static void main(String[] args) {
-          int [] arr = {-3,-1,-1};
+          int [] arr = {2,-3,2,4,-1};
           System.out.println("Max product : "+maxProductSubArr(arr));
      }
 }

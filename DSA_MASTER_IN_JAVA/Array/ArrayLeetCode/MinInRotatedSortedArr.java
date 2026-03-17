@@ -1,5 +1,5 @@
 package DSA_MASTER_IN_JAVA.Array.ArrayLeetCode;
-
+// Revise [1]
 public class MinInRotatedSortedArr {
 
     static int minElem(int[] arr){

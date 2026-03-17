@@ -1,7 +1,7 @@
 package DSA_MASTER_IN_JAVA.Array.ArrayLeetCode;
 
 import java.util.Arrays;
-
+// Revise [1]
 public class TwoSumII {
      static int[] twoSum2(int[]arr,int target){
           int n = arr.length; 

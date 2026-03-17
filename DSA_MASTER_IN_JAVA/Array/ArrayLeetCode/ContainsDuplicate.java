@@ -2,7 +2,7 @@ package DSA_MASTER_IN_JAVA.Array.ArrayLeetCode;
 
 import java.util.HashSet;
 import java.util.Set;
-
+// Revise [1]
 public class ContainsDuplicate {
      
      public static void main(String[] args) {

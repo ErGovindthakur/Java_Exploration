@@ -3,7 +3,7 @@ package DSA_MASTER_IN_JAVA.Array.ArrayLeetCode;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
+// Revise [1]
 public class TwoSum {
      static int[] twoSum(int[]arr,int target){
           // creating a hashmap to get O(1) look up

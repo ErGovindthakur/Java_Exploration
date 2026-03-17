@@ -1,5 +1,5 @@
 package DSA_MASTER_IN_JAVA.Array.ArrayLeetCode;
-
+// Revise [1]
 public class BestTimeToBuyAndSellStock {
      static int bstTmToBuyAndSell(int[]arr){
           int min = arr[0]; // buy time

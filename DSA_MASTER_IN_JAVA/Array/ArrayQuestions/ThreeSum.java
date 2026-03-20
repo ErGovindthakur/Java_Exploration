@@ -1,3 +1,5 @@
+package DSA_MASTER_IN_JAVA.Array.ArrayQuestions;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
